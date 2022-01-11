@@ -104,6 +104,7 @@ p {
     margin-right: 8px;
 }
 
+
 /* testimonials page */
 .testimonials {
     background-color: #F4F5F7;
@@ -127,13 +128,17 @@ p {
     line-height: 1.3636363636;
     letter-spacing: -0.04em;
     margin-bottom: 16px;
+    color: #2B292D;
 }
 
 
 /* program */
-.program-list {
+.program-introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 80px 0;
-    height: 100vh;
 }
 
 .program-desc {
@@ -141,6 +146,9 @@ p {
 }
 
 .program-desc strong {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
     display: inline-block;
     margin-bottom: 8px;
     color: #009B4D;
@@ -151,10 +159,7 @@ p {
     font-size: 34px;
     line-height: 1.0588235294;
     letter-spacing: -0.03em;
-}
-
-.program-desc p {
-    margin-bottom: 32px;
+    color: #2B292D;
 }
 
 .program-group {
@@ -162,6 +167,13 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #2B292D;
+}
+
+.program-group strong{
+    font-size: 18px;
+    line-height: 1.3333333333;
+    letter-spacing: -0.02em;
     font-weight: 700;
 }
 
@@ -174,21 +186,15 @@ p {
     height: 290px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0px 4px 6px 0px #0000000D;
-
+    background-color: #FFF;
+    box-shadow: 0 4px 6px 0 #0000000D, 0 1px 3px 0 rgba(0,0,0,0.1);
 }
 
 .program-1 img {
     display: block;
     width: 142px;
-    height: auto;
+    height: 195px;
     margin-bottom: 16px;
-}
-
-.program-1 strong {
-    font-size: 18px;
-    line-height: 1.3333333333;
-    letter-spacing: -0.02em;
 }
 
 .program-2 {
@@ -200,21 +206,17 @@ p {
     height: 290px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0px 4px 6px 0px #0000000D;
+    background-color: #FFF;
+    box-shadow: 0px 4px 6px 0px #0000000D, 0 1px 3px 0 rgba(0,0,0,0.1);
 }
 
 .program-2 img {
     display: block;
     width: 146px;
-    height: auto;
+    height: 195px;
     margin-bottom: 16px;
 }
 
-.program-2 strong {
-    font-size: 18px;
-    line-height: 1.3333333333;
-    letter-spacing: -0.02em;
-}
 
 .program-3 {
     display: flex;
@@ -225,20 +227,15 @@ p {
     height: 290px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0px 4px 6px 0px #0000000D;
+    background-color: #FFF;
+    box-shadow: 0px 4px 6px 0px #0000000D, 0 1px 3px 0 rgba(0,0,0,0.1);
 }
 
 .program-3 img {
     display: block;
     width: 122px;
-    height: auto;
+    height: 195px;
     margin-bottom: 16px;
-}
-
-.program-3 strong {
-    font-size: 18px;
-    line-height: 1.3333333333;
-    letter-spacing: -0.02em;
 }
 
 
@@ -283,20 +280,82 @@ p {
 
     .testimonials-feature:first-child {
         width: 370px;
-        margin-bottom: 0;
+        text-align: start;
+        margin-right: 110px;
+        margin-bottom: 0; 
     }
+
 
     .testimonials-feature:last-child {
         width: 450px;
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
     }
 
     .testimonials-title {
         font-size: 26px;
         line-height: 1.3076923077;
         letter-spacing: -0.04em;
+        font-weight: 700;
         margin-bottom: 16px;
     }
+
+
+    /* program */
+    .program-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 72px;
+        text-align: center;
+    }
+
+    .program-desc strong{
+        font-size: 22px;
+        line-height: 1.0909090909;
+        margin-bottom: 16px;
+    }
+
+    .program-desc h1 {
+        margin-bottom: 32px;
+        /* text-align: center; */
+        font-size: 56px;
+        line-height: 1;
+    }
+
+    .program-desc p {
+        width: 770px;
+        line-height: 1.4545454545;
+    }
+
+    .program-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .program-1,
+    .program-2,
+    .program-3{
+        transition: background-color 60ms ease-in-out, color 60ms ease-in-out;
+    }
+
+    .program-1:hover,
+    .program-2:hover,
+    .program-3:hover{
+        color: #FFF;
+        background-color: #3141C5;
+        box-shadow: 0 11px 55px 0 #00000012, 0 13px 18px 0 #00000026;
+        
+    }
+
+    .program-1,
+    .program-2 { 
+        margin-right: 30px;
+    }
+
 }
 
 /* Custom Grid System - Fix Container Width */
