@@ -406,6 +406,7 @@ p {
     /* curriculum */
     .curriculum .row:first-child {
         margin-bottom: 24px;
+        margin-right: 30px;
     }
     
     .curriculum .section-desc{
